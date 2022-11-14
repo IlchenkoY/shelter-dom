@@ -1,0 +1,514 @@
+@font-face {
+  font-family: 'Georgia';
+  src: url('/fonts/georgia-regular/Georgia.eot');
+  src: url('/fonts/georgia-regular/Georgia.eot?#iefix')
+      format('embedded-opentype'),
+    url('/fonts/georgia-regular/Georgia.woff2') format('woff2'),
+    url('/fonts/georgia-regular/Georgia.woff') format('woff'),
+    url('/fonts/georgia-regular/Georgia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('/fonts/georgia-italic/Georgia-Italic.eot');
+  src: url('/fonts/georgia-italic/Georgia-Italic.eot?#iefix')
+      format('embedded-opentype'),
+    url('/fonts/georgia-italic/Georgia-Italic.woff2') format('woff2'),
+    url('/fonts/georgia-italic/Georgia-Italic.woff') format('woff'),
+    url('/fonts/georgia-italic/Georgia-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('/fonts/georgia-bold/Georgia-Bold.eot');
+  src: url('/fonts/georgia-bold/Georgia-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('/fonts/georgia-bold/Georgia-Bold.woff2') format('woff2'),
+    url('/fonts/georgia-bold/Georgia-Bold.woff') format('woff'),
+    url('/fonts/georgia-bold/Georgia-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url('/fonts/arial -regular/ArialMT.eot');
+  src: url('/fonts/arial -regular/ArialMT.eot?#iefix')
+      format('embedded-opentype'),
+    url('/fonts/arial-regular/ArialMT.woff2') format('woff2'),
+    url('/fonts/arial-regular/ArialMT.woff') format('woff'),
+    url('/fonts/arial-regular/ArialMT.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url('/fonts/arial-italic/Arial-ItalicMT.eot');
+  src: url('/fonts/arial-italic/Arial-ItalicMT.eot?#iefix')
+      format('embedded-opentype'),
+    url('/fonts/arial-italic/Arial-ItalicMT.woff2') format('woff2'),
+    url('/fonts/arial-italic/Arial-ItalicMT.woff') format('woff'),
+    url('/fonts/arial-italic/Arial-ItalicMT.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --color-light-xl: #ffffff;
+  --color-light-l: #f6f6f6;
+  --color-light-s: #fafafa;
+  --color-dark-s: #cdcdcd;
+  --color-dark-m: #b2b2b2;
+  --color-dark-l: #545454;
+  --color-dark-xl: #4c4c4c;
+  --color-dark-2xl: #444444;
+  --color-dark-3xl: #292929;
+  --color-primary: #f1cdb3;
+  --color-primary-light: #fddcc4;
+  --main-font: 'Georgia', sans-serif;
+}
+
+body {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: inherit;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+button {
+  padding: 0;
+}
+p {
+  margin: 0;
+}
+.address {
+  font-style: normal;
+}
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+/*=============COMPONENTS=============*/
+.title {
+  font-size: 25px;
+  line-height: 1.28;
+  letter-spacing: 0.06em;
+  color: var(--color-dark-l);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title--white {
+  color: var(--color-light-xl);
+}
+
+.btn {
+  font-size: 17px;
+  line-height: 1.294;
+  letter-spacing: 0.06em;
+  color: var(--color-dark-3xl);
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 100px;
+  border: 2px solid var(--color-primary);
+  padding: 13px 43px;
+  user-select: none;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+}
+
+.description {
+  font-family: 'Arial', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-dark-xl);
+}
+
+/*=============HEADER=============*/
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.header {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  background-color: chocolate;
+}
+.header .logo {
+  display: flex;
+  flex-direction: column;
+  margin-right: 33px;
+}
+.logo__text--title {
+  font-size: 32px;
+  line-height: 1.093;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+  color: var(--color-primary);
+}
+
+.logo__text--subtitle {
+  font-family: 'Arial', sans-serif;
+  font-size: 13px;
+  line-height: 1.153;
+  letter-spacing: 0.1em;
+  color: var(--color-light-xl);
+}
+
+.modal-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  line-height: 0;
+  padding: 10px;
+}
+
+.modal-btn__img--primary {
+  fill: var(--color-primary);
+}
+
+/*=============HERO=============*/
+.hero {
+  background-color: #262425;
+  background-image: url(/img/background-img/noise_transparent@2x.png),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+  text-align: center;
+}
+
+.hero__title {
+  margin-bottom: 42px;
+}
+
+.hero__description {
+  text-align: center;
+  color: var(--color-dark-s);
+  margin-bottom: 42px;
+}
+
+.hero__btn {
+  background-color: var(--color-primary);
+  margin-bottom: 105px;
+}
+
+.hero__img {
+  margin-left: auto;
+}
+
+/*=============ABOUT=============*/
+.about {
+  padding-top: 42px;
+  padding-bottom: 42px;
+  background-color: var(--color-light-xl);
+}
+
+.about__title {
+  margin-bottom: 25px;
+}
+
+.about__description {
+  width: 270px;
+  margin: 0 auto;
+}
+
+.about__description--first {
+  margin-bottom: 22px;
+}
+
+.about__description--second {
+  margin-bottom: 42px;
+}
+
+.about__img {
+  margin: 0 auto;
+}
+
+/*=============OUR FRIENDS=============*/
+.our-friends {
+  padding-top: 42px;
+  padding-bottom: 42px;
+  background-color: var(--color-light-l);
+}
+
+.our-friends__title {
+  margin-bottom: 42px;
+}
+
+.our-friends__description {
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.06em;
+  color: var(--color-dark-l);
+}
+
+.our-friends__img,
+.our-friends__description {
+  margin-bottom: 30px;
+}
+
+.our-friends__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  margin: 0 auto 20px;
+  border-radius: 9px;
+  overflow: hidden;
+  background-color: var(--color-light-s);
+}
+
+.our-friends__btn {
+  margin-bottom: 30px;
+}
+
+.pagination-btn {
+  padding: 0;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-pagination-list {
+  display: flex;
+  justify-content: space-between;
+  width: 184px;
+  margin: 0 auto 42px;
+}
+
+.our-friends__link {
+  display: block;
+  width: 262px;
+  height: 52px;
+  font-size: 17px;
+  line-height: 1.294;
+  letter-spacing: 0.06em;
+  color: var(--color-dark-3xl);
+  padding: 13px 43px;
+  margin: 0 auto;
+  background-color: var(--color-primary);
+  border-radius: 100px;
+  border: 2px solid var(--color-primary);
+}
+
+.our-friends__link:focus,
+.our-friends__link:hover {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+}
+
+/*=============HOW YOU CAN HELP=============*/
+.help {
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+.help-container {
+  padding: 0 15px;
+}
+
+.help__title {
+  margin-bottom: 42px;
+}
+
+.help__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.help__list-item {
+  display: flex;
+  flex-basis: calc((100% - 30px) / 2);
+  flex-direction: column;
+  align-items: center;
+}
+
+.help__list-item-description {
+  font-size: 15px;
+  line-height: 1.133;
+  letter-spacing: 0.06em;
+  color: var(--color-dark-l);
+}
+
+.help__list-img {
+  margin-bottom: 20px;
+  fill: var(--color-primary);
+}
+/*=============DONATION=============*/
+.donation {
+  padding-top: 42px;
+  padding-bottom: 42px;
+  background-color: var(--color-light-l);
+}
+
+.donation__title {
+  margin-bottom: 20px;
+}
+
+.donation__description-italic {
+  font-style: italic;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--color-dark-m);
+  margin-bottom: 42px;
+}
+
+.donation__description {
+  font-family: var(--main-font);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.donation__card-number {
+  font-size: 15px;
+  line-height: 1.133;
+  letter-spacing: 0.06em;
+  color: var(--color-dark-l);
+  margin-left: 15px;
+}
+
+.donation__btn {
+  display: flex;
+  align-items: center;
+  padding: 8px 13px;
+  margin: 20px auto;
+  border-radius: 9px;
+  background-color: var(--color-primary);
+  font-size: 15px;
+  line-height: 1.133;
+}
+
+.donation__img {
+  margin: 0 auto;
+}
+
+/*=============FOOTER=============*/
+.footer {
+  padding-top: 30px;
+  background-color: #262425;
+  background-image: url(/img/background-img/noise_transparent@2x.png),
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%);
+}
+
+.footer__title {
+  margin-bottom: 40px;
+  width: 270px;
+}
+
+.footer__list-link {
+  width: 258px;
+  font-size: 20px;
+  line-height: 1, 15;
+  letter-spacing: 0.06em;
+  color: var(--color-primary);
+}
+
+.footer__address-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.footer__contacts-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.footer__list-img {
+  margin-right: 20px;
+  fill: var(--color-primary);
+}
+
+.footer__img {
+  margin: 0 auto;
+}
+
+/*=============OUR PETS=============*/
+
+/*=============OUR PETS HEADER=============*/
+.our-pets-header {
+  background-color: var(--color-light-xl);
+}
+
+.our-pets-header-logo__text--title {
+  color: var(--color-dark-l);
+}
+
+.our-pets-header-logo__text--subtitle {
+  color: var(--color-dark-3xl);
+}
+
+/*=============OUR PETS OUR FRIENDS=============*/
+.our-pets-our-friends__card {
+  margin-bottom: 42px;
+}
+
+/*=============OUR PETS PAGINATION=============*/
+.tablet__pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination-page {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-dark-3xl);
+  background-color: var(--color-primary);
+  border-radius: 100px;
+  border: 2px solid var(--color-primary);
+  cursor: default;
+}
