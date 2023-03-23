@@ -1,0 +1,74 @@
+.our-friends {
+  padding-top: 42px;
+  padding-bottom: 42px;
+  background-color: $color-light-l;
+}
+
+.our-friends__title {
+  @extend %title;
+  margin-bottom: 42px;
+}
+
+.our-friends__description {
+  @include font(20px, 1.15, 0.06em);
+  color: $color-dark-l;
+}
+
+.our-friends__img,
+.our-friends__description {
+  margin-bottom: 30px;
+}
+
+.our-friends__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  margin: 0 auto 20px;
+  border-radius: 9px;
+  overflow: hidden;
+  background-color: $color-light-s;
+}
+
+.our-friends__btn {
+  @extend %btn;
+  margin-bottom: 30px;
+}
+
+.pagination-btn {
+  @extend %btn;
+  padding: 0;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-pagination-list {
+  display: flex;
+  justify-content: space-between;
+  width: 184px;
+  margin: 0 auto 42px;
+}
+
+.our-friends__link {
+  display: block;
+  width: 262px;
+  @include font(17px, 1.294, 0.06em);
+  color: $color-dark-3xl;
+  padding: 13px 43px;
+  margin: 0 auto;
+  background-color: $color-primary;
+  border-radius: 100px;
+  border: 2px solid $color-primary;
+
+  transition: background-color 250ms $timing-function, border-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $color-primary-light;
+    border-color: $color-primary-light;
+  }
+}

@@ -1,0 +1,12 @@
+.our-pets-header {
+  padding-bottom: 30px;
+  background-color: $color-light-xl;
+}
+
+.our-pets-header__logo-text {
+  color: $color-dark-l;
+
+  &--subtitle {
+    color: $color-dark-3xl;
+  }
+}

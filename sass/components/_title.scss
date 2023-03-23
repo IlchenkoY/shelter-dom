@@ -1,0 +1,11 @@
+%title {
+  @include font(25px, 1.28, 0.06em);
+  color: $color-dark-l;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title--white {
+  color: $color-light-xl;
+}

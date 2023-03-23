@@ -1,0 +1,43 @@
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: column;
+  margin-right: 33px;
+}
+
+.header__logo-text {
+  @include font(32px, 1.093, 0.06em);
+  margin-bottom: 10px;
+  color: $color-primary;
+
+  &--subtitle {
+    font-family: 'Arial', sans-serif;
+    @include font(13px, 1.153, 0.1em);
+    color: $color-light-xl;
+  }
+}
+
+.nav-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  line-height: 0;
+  padding: 10px;
+}
+
+.nav-btn__img--primary {
+  fill: $color-primary;
+}

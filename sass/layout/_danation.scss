@@ -1,0 +1,46 @@
+.donation {
+  padding-top: 42px;
+  padding-bottom: 42px;
+  background-color: $color-light-l;
+}
+
+.donation__title {
+  @extend %title;
+  margin-bottom: 20px;
+}
+
+.donation__description {
+  @extend %description;
+  font-family: $main-font;
+  text-align: center;
+  margin-bottom: 20px;
+
+  &--italic {
+    @extend %description;
+    font-style: italic;
+    @include font(12px, 1.5, null);
+    color: $color-dark-m;
+    margin-bottom: 42px;
+  }
+}
+
+.donation__card-number {
+  @include font(15px, 1.133, 0.06em);
+  color: $color-dark-l;
+  margin-left: 15px;
+}
+
+.donation__btn {
+  @extend %btn;
+  display: flex;
+  align-items: center;
+  padding: 8px 13px;
+  margin: 20px auto;
+  border-radius: 9px;
+  background-color: $color-primary;
+  @include font(15px, 1.133, null);
+}
+
+.donation__img {
+  margin: 0 auto;
+}

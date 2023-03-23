@@ -1,0 +1,28 @@
+.about {
+  padding-top: 42px;
+  padding-bottom: 42px;
+  background-color: var(--color-light-xl);
+}
+
+.about__title {
+  @extend %title;
+  margin-bottom: 25px;
+}
+
+.about__description {
+  @extend %description;
+  width: 270px;
+  margin: 0 auto;
+
+  &--first {
+    margin-bottom: 22px;
+  }
+
+  &--second {
+    margin-bottom: 42px;
+  }
+}
+
+.about__img {
+  margin: 0 auto;
+}

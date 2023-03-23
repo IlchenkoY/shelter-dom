@@ -1,0 +1,5 @@
+%description {
+  font-family: 'Arial', sans-serif;
+  @include font(15px, 1.6, null);
+  color: $color-dark-xl;
+}

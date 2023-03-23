@@ -1,0 +1,17 @@
+.our-pets__pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination-page {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-dark-3xl;
+  background-color: $color-primary;
+  border-radius: 100px;
+  border: 2px solid $color-primary;
+  cursor: default;
+}

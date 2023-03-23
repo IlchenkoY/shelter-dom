@@ -1,88 +1,49 @@
 @font-face {
-  font-family: 'Georgia';
-  src: url('/fonts/georgia-regular/Georgia.eot');
-  src: url('/fonts/georgia-regular/Georgia.eot?#iefix')
-      format('embedded-opentype'),
-    url('/fonts/georgia-regular/Georgia.woff2') format('woff2'),
-    url('/fonts/georgia-regular/Georgia.woff') format('woff'),
-    url('/fonts/georgia-regular/Georgia.ttf') format('truetype');
+  font-family: "Georgia";
+  src: url("/fonts/georgia-regular/Georgia.eot");
+  src: url("/fonts/georgia-regular/Georgia.eot?#iefix") format("embedded-opentype"), url("/fonts/georgia-regular/Georgia.woff2") format("woff2"), url("/fonts/georgia-regular/Georgia.woff") format("woff"), url("/fonts/georgia-regular/Georgia.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Georgia';
-  src: url('/fonts/georgia-italic/Georgia-Italic.eot');
-  src: url('/fonts/georgia-italic/Georgia-Italic.eot?#iefix')
-      format('embedded-opentype'),
-    url('/fonts/georgia-italic/Georgia-Italic.woff2') format('woff2'),
-    url('/fonts/georgia-italic/Georgia-Italic.woff') format('woff'),
-    url('/fonts/georgia-italic/Georgia-Italic.ttf') format('truetype');
+  font-family: "Georgia";
+  src: url("/fonts/georgia-italic/Georgia-Italic.eot");
+  src: url("/fonts/georgia-italic/Georgia-Italic.eot?#iefix") format("embedded-opentype"), url("/fonts/georgia-italic/Georgia-Italic.woff2") format("woff2"), url("/fonts/georgia-italic/Georgia-Italic.woff") format("woff"), url("/fonts/georgia-italic/Georgia-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Georgia';
-  src: url('/fonts/georgia-bold/Georgia-Bold.eot');
-  src: url('/fonts/georgia-bold/Georgia-Bold.eot?#iefix')
-      format('embedded-opentype'),
-    url('/fonts/georgia-bold/Georgia-Bold.woff2') format('woff2'),
-    url('/fonts/georgia-bold/Georgia-Bold.woff') format('woff'),
-    url('/fonts/georgia-bold/Georgia-Bold.ttf') format('truetype');
+  font-family: "Georgia";
+  src: url("/fonts/georgia-bold/Georgia-Bold.eot");
+  src: url("/fonts/georgia-bold/Georgia-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/georgia-bold/Georgia-Bold.woff2") format("woff2"), url("/fonts/georgia-bold/Georgia-Bold.woff") format("woff"), url("/fonts/georgia-bold/Georgia-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Arial';
-  src: url('/fonts/arial -regular/ArialMT.eot');
-  src: url('/fonts/arial -regular/ArialMT.eot?#iefix')
-      format('embedded-opentype'),
-    url('/fonts/arial-regular/ArialMT.woff2') format('woff2'),
-    url('/fonts/arial-regular/ArialMT.woff') format('woff'),
-    url('/fonts/arial-regular/ArialMT.ttf') format('truetype');
+  font-family: "Arial";
+  src: url("/fonts/arial -regular/ArialMT.eot");
+  src: url("/fonts/arial -regular/ArialMT.eot?#iefix") format("embedded-opentype"), url("/fonts/arial-regular/ArialMT.woff2") format("woff2"), url("/fonts/arial-regular/ArialMT.woff") format("woff"), url("/fonts/arial-regular/ArialMT.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Arial';
-  src: url('/fonts/arial-italic/Arial-ItalicMT.eot');
-  src: url('/fonts/arial-italic/Arial-ItalicMT.eot?#iefix')
-      format('embedded-opentype'),
-    url('/fonts/arial-italic/Arial-ItalicMT.woff2') format('woff2'),
-    url('/fonts/arial-italic/Arial-ItalicMT.woff') format('woff'),
-    url('/fonts/arial-italic/Arial-ItalicMT.ttf') format('truetype');
+  font-family: "Arial";
+  src: url("/fonts/arial-italic/Arial-ItalicMT.eot");
+  src: url("/fonts/arial-italic/Arial-ItalicMT.eot?#iefix") format("embedded-opentype"), url("/fonts/arial-italic/Arial-ItalicMT.woff2") format("woff2"), url("/fonts/arial-italic/Arial-ItalicMT.woff") format("woff"), url("/fonts/arial-italic/Arial-ItalicMT.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
-
-:root {
-  --color-light-xl: #ffffff;
-  --color-light-l: #f6f6f6;
-  --color-light-s: #fafafa;
-  --color-dark-s: #cdcdcd;
-  --color-dark-m: #b2b2b2;
-  --color-dark-l: #545454;
-  --color-dark-xl: #4c4c4c;
-  --color-dark-2xl: #444444;
-  --color-dark-3xl: #292929;
-  --color-primary: #f1cdb3;
-  --color-primary-light: #fddcc4;
-  --main-font: 'Georgia', sans-serif;
-}
-
 body {
-  font-family: var(--main-font);
+  font-family: "Georgia", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
+
 h1,
 h2,
 h3,
@@ -92,80 +53,86 @@ h6 {
   margin: 0;
   font-weight: inherit;
 }
+
 ul,
 ol {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 a {
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
+
 img {
   display: block;
 }
+
 button {
   padding: 0;
 }
+
 p {
   margin: 0;
 }
+
 .address {
   font-style: normal;
 }
+
 .container {
   width: 320px;
   margin: 0 auto;
   padding: 0 10px;
 }
-/*=============COMPONENTS=============*/
-.title {
+
+.footer__title, .donation__title, .help__title, .our-friends__title, .about__title, .hero__title {
   font-size: 25px;
   line-height: 1.28;
   letter-spacing: 0.06em;
-  color: var(--color-dark-l);
+  color: #545454;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
 .title--white {
-  color: var(--color-light-xl);
+  color: #ffffff;
 }
 
-.btn {
+.donation__btn, .pagination-btn, .our-friends__btn, .hero__btn {
   font-size: 17px;
   line-height: 1.294;
   letter-spacing: 0.06em;
-  color: var(--color-dark-3xl);
+  color: #292929;
   background-color: transparent;
   cursor: pointer;
   border-radius: 100px;
-  border: 2px solid var(--color-primary);
+  border: 2px solid #f1cdb3;
   padding: 13px 43px;
   user-select: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.donation__btn:hover, .pagination-btn:hover, .our-friends__btn:hover, .hero__btn:hover, .donation__btn:focus, .pagination-btn:focus, .our-friends__btn:focus, .hero__btn:focus {
+  background-color: #fddcc4;
+  border-color: #fddcc4;
 }
 
-.btn:hover,
-.btn:focus {
-  background-color: var(--color-primary-light);
-  border-color: var(--color-primary-light);
-}
-
-.description {
-  font-family: 'Arial', sans-serif;
+.donation__description--italic, .donation__description, .about__description, .hero__description {
+  font-family: "Arial", sans-serif;
   font-size: 15px;
   line-height: 1.6;
-  color: var(--color-dark-xl);
+  color: #4c4c4c;
 }
 
-/*=============HEADER=============*/
 .navigation {
   display: flex;
   align-items: center;
 }
+
 .header {
   padding-top: 30px;
   padding-bottom: 60px;
@@ -174,28 +141,29 @@ p {
   right: 0;
   z-index: 1;
 }
-.header .logo {
+
+.header__logo {
   display: flex;
   flex-direction: column;
   margin-right: 33px;
 }
-.logo__text--title {
+
+.header__logo-text {
   font-size: 32px;
   line-height: 1.093;
   letter-spacing: 0.06em;
   margin-bottom: 10px;
-  color: var(--color-primary);
+  color: #f1cdb3;
 }
-
-.logo__text--subtitle {
-  font-family: 'Arial', sans-serif;
+.header__logo-text--subtitle {
+  font-family: "Arial", sans-serif;
   font-size: 13px;
   line-height: 1.153;
   letter-spacing: 0.1em;
-  color: var(--color-light-xl);
+  color: #ffffff;
 }
 
-.modal-btn {
+.nav-btn {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -203,17 +171,14 @@ p {
   padding: 10px;
 }
 
-.modal-btn__img--primary {
-  fill: var(--color-primary);
+.nav-btn__img--primary {
+  fill: #f1cdb3;
 }
 
-/*=============HERO=============*/
 .hero {
   background-color: #262425;
-  background-image: url(/img/background-img/noise_transparent@2x.png),
-    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+  background-image: url(/img/background-img/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
   text-align: center;
-  position: relative;
   padding-top: 150px;
 }
 
@@ -223,12 +188,12 @@ p {
 
 .hero__description {
   text-align: center;
-  color: var(--color-dark-s);
+  color: #cdcdcd;
   margin-bottom: 42px;
 }
 
 .hero__btn {
-  background-color: var(--color-primary);
+  background-color: #f1cdb3;
   margin-bottom: 105px;
 }
 
@@ -236,7 +201,6 @@ p {
   margin-left: auto;
 }
 
-/*=============ABOUT=============*/
 .about {
   padding-top: 42px;
   padding-bottom: 42px;
@@ -251,11 +215,9 @@ p {
   width: 270px;
   margin: 0 auto;
 }
-
 .about__description--first {
   margin-bottom: 22px;
 }
-
 .about__description--second {
   margin-bottom: 42px;
 }
@@ -264,11 +226,10 @@ p {
   margin: 0 auto;
 }
 
-/*=============OUR FRIENDS=============*/
 .our-friends {
   padding-top: 42px;
   padding-bottom: 42px;
-  background-color: var(--color-light-l);
+  background-color: #f6f6f6;
 }
 
 .our-friends__title {
@@ -279,7 +240,7 @@ p {
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.06em;
-  color: var(--color-dark-l);
+  color: #545454;
 }
 
 .our-friends__img,
@@ -296,7 +257,7 @@ p {
   margin: 0 auto 20px;
   border-radius: 9px;
   overflow: hidden;
-  background-color: var(--color-light-s);
+  background-color: #fafafa;
 }
 
 .our-friends__btn {
@@ -322,31 +283,28 @@ p {
 .our-friends__link {
   display: block;
   width: 262px;
-  height: 52px;
   font-size: 17px;
   line-height: 1.294;
   letter-spacing: 0.06em;
-  color: var(--color-dark-3xl);
+  color: #292929;
   padding: 13px 43px;
   margin: 0 auto;
-  background-color: var(--color-primary);
+  background-color: #f1cdb3;
   border-radius: 100px;
-  border: 2px solid var(--color-primary);
+  border: 2px solid #f1cdb3;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.our-friends__link:hover, .our-friends__link:focus {
+  background-color: #fddcc4;
+  border-color: #fddcc4;
 }
 
-.our-friends__link:focus,
-.our-friends__link:hover {
-  background-color: var(--color-primary-light);
-  border-color: var(--color-primary-light);
-}
-
-/*=============HOW YOU CAN HELP=============*/
 .help {
   padding-top: 42px;
   padding-bottom: 42px;
 }
 
-.help-container {
+.help__container {
   padding: 0 15px;
 }
 
@@ -359,7 +317,6 @@ p {
   flex-wrap: wrap;
   gap: 30px;
 } */
-
 .help__list {
   display: grid;
   gap: 30px;
@@ -381,43 +338,42 @@ p {
   font-size: 15px;
   line-height: 1.133;
   letter-spacing: 0.06em;
-  color: var(--color-dark-l);
+  color: #545454;
 }
 
 .help__list-img {
   margin-bottom: 20px;
-  fill: var(--color-primary);
+  fill: #f1cdb3;
 }
-/*=============DONATION=============*/
+
 .donation {
   padding-top: 42px;
   padding-bottom: 42px;
-  background-color: var(--color-light-l);
+  background-color: #f6f6f6;
 }
 
 .donation__title {
   margin-bottom: 20px;
 }
 
-.donation__description-italic {
+.donation__description {
+  font-family: "Georgia", sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.donation__description--italic {
   font-style: italic;
   font-size: 12px;
   line-height: 1.5;
-  color: var(--color-dark-m);
+  color: #b2b2b2;
   margin-bottom: 42px;
-}
-
-.donation__description {
-  font-family: var(--main-font);
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 .donation__card-number {
   font-size: 15px;
   line-height: 1.133;
   letter-spacing: 0.06em;
-  color: var(--color-dark-l);
+  color: #545454;
   margin-left: 15px;
 }
 
@@ -427,7 +383,7 @@ p {
   padding: 8px 13px;
   margin: 20px auto;
   border-radius: 9px;
-  background-color: var(--color-primary);
+  background-color: #f1cdb3;
   font-size: 15px;
   line-height: 1.133;
 }
@@ -436,12 +392,10 @@ p {
   margin: 0 auto;
 }
 
-/*=============FOOTER=============*/
 .footer {
   padding-top: 30px;
   background-color: #262425;
-  background-image: url(/img/background-img/noise_transparent@2x.png),
-    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%);
+  background-image: url(/img/background-img/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%);
 }
 
 .footer__title {
@@ -453,6 +407,9 @@ p {
   margin: o auto;
 }
 
+.footer__contacts-list-item {
+  margin: 0 auto 31px;
+}
 .footer__contacts-list-item:nth-child(1) {
   width: 251px;
 }
@@ -460,17 +417,13 @@ p {
   width: 240px;
 }
 
-.footer__contacts-list-item {
-  margin: 0 auto 31px;
-}
-
 .footer__list-link {
   display: inline-block;
   position: relative;
   font-size: 20px;
-  line-height: 1, 15;
+  line-height: 1.15;
   letter-spacing: 0.06em;
-  color: var(--color-primary);
+  color: #f1cdb3;
   padding-left: 42px;
   padding-bottom: 9px;
 }
@@ -486,35 +439,34 @@ p {
 
 .footer__list-img {
   position: absolute;
-  fill: var(--color-primary);
+  fill: #f1cdb3;
 }
 
 .footer__img {
   margin: 0 auto;
 }
 
-/*=============OUR PETS=============*/
-
-/*=============OUR PETS HEADER=============*/
 .our-pets-header {
-  background-color: var(--color-light-xl);
+  padding-bottom: 30px;
+  background-color: #ffffff;
 }
 
-.our-pets-header-logo__text--title {
-  color: var(--color-dark-l);
+.our-pets-header__logo-text {
+  color: #545454;
+}
+.our-pets-header__logo-text--subtitle {
+  color: #292929;
 }
 
-.our-pets-header-logo__text--subtitle {
-  color: var(--color-dark-3xl);
+.our-pets-our-friends {
+  padding-top: 140px;
 }
 
-/*=============OUR PETS OUR FRIENDS=============*/
 .our-pets-our-friends__card {
   margin-bottom: 42px;
 }
 
-/*=============OUR PETS PAGINATION=============*/
-.tablet__pagination {
+.our-pets__pagination {
   display: flex;
   justify-content: space-between;
 }
@@ -525,9 +477,9 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--color-dark-3xl);
-  background-color: var(--color-primary);
+  color: #292929;
+  background-color: #f1cdb3;
   border-radius: 100px;
-  border: 2px solid var(--color-primary);
+  border: 2px solid #f1cdb3;
   cursor: default;
-}
+}/*# sourceMappingURL=main.css.map */
