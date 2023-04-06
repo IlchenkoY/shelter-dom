@@ -10,3 +10,17 @@
     color: $color-dark-3xl;
   }
 }
+
+.our-pets-navigation__list-link {
+  color: $color-dark-l;
+
+  &:hover {
+    color: $color-dark-3xl;
+  }
+}
+
+@media screen and (width>=getBreakpoint('tablet')) {
+  .our-pets-header {
+    padding-top: 30px;
+  }
+}

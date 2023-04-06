@@ -41,3 +41,55 @@
 .nav-btn__img--primary {
   fill: $color-primary;
 }
+
+.navigation__list {
+  display: none;
+}
+
+@media screen and (width >=getBreakpoint('tablet')) {
+  .nav-btn {
+    display: none;
+  }
+
+  .navigation__list {
+    display: inline-block;
+    margin-left: auto;
+  }
+
+  .navigation__list-item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+
+  .navigation__list-link {
+    font-family: 'Arial';
+    @include font(15px, 1.6, null);
+    color: $color-dark-s;
+    position: relative;
+
+    // &::after {
+    //   content: '';
+    //   display: none;
+    //   width: 100%;
+    //   height: 3px;
+    //   background-color: $color-primary;
+    //   position: absolute;
+    //   bottom: -6px;
+    //   left: 0;
+    // }
+
+    &:focus,
+    &:hover {
+      color: $color-light-s;
+    }
+  }
+}
+
+@media screen and (width >=getBreakpoint('desktop')) {
+  .header {
+    padding-top: 60px;
+  }
+}

@@ -44,3 +44,62 @@
 .donation__img {
   margin: 0 auto;
 }
+
+@media screen and (width>=getBreakpoint('tablet')) {
+  .donation {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .donation__title,
+  .donation__description {
+    text-align: start;
+  }
+
+  .donation__description,
+  .donation__title,
+  .donation__btn,
+  .donation__description--italic {
+    margin-left: 163px;
+  }
+
+  .donation__description--italic {
+    max-width: 380px;
+    margin-bottom: 60px;
+  }
+
+  .donation__title {
+    max-width: 300px;
+  }
+
+  .donation__card-number {
+    font-size: 20px;
+  }
+}
+
+@media screen and (width>=getBreakpoint('desktop')) {
+  .donation {
+    padding-bottom: 100px;
+  }
+
+  .donation__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .donation__description,
+  .donation__title,
+  .donation__btn,
+  .donation__description--italic {
+    margin-left: 0px;
+  }
+
+  .donation__description--italic {
+    margin-bottom: 0;
+  }
+
+  .donation__img {
+    margin-right: 30px;
+  }
+}

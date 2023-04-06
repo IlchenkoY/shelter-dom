@@ -15,3 +15,10 @@
   border: 2px solid $color-primary;
   cursor: default;
 }
+
+@media screen and (width>=getBreakpoint('tablet')) {
+  .our-pets__pagination {
+    width: 340px;
+    margin: 0 auto;
+  }
+}

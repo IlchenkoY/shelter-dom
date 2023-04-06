@@ -26,3 +26,44 @@
 .about__img {
   margin: 0 auto;
 }
+
+@media screen and (width>=getBreakpoint('tablet')) {
+  .about {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  .about__title {
+    text-align: start;
+    margin-left: 139px;
+  }
+
+  .about__description {
+    width: 430px;
+
+    &--second {
+      margin-bottom: 80px;
+    }
+  }
+
+  .about__img {
+    margin-left: 175px;
+  }
+}
+
+@media screen and (width >=getBreakpoint('desktop')) {
+  .about__desktop-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 120px;
+  }
+
+  .about__title {
+    margin-left: 0;
+  }
+
+  .about__description--second {
+    margin-bottom: 0;
+  }
+}

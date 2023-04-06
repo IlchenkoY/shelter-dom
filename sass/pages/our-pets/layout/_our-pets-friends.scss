@@ -2,6 +2,27 @@
   padding-top: 140px;
 }
 
-.our-pets-our-friends__card {
+.our-pets-our-friends__list {
   margin-bottom: 42px;
+}
+
+@media screen and (width>=getBreakpoint('tablet')) {
+  .our-pets-our-friends__list {
+    margin-bottom: 40px;
+  }
+
+  .our-pets-our-friends {
+    padding-top: 200px;
+    padding-bottom: 70px;
+  }
+
+  .our-pets-our-friends__title {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (width>=getBreakpoint('desktop')) {
+  .our-pets-our-friends {
+    padding-bottom: 100px;
+  }
 }

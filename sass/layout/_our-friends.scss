@@ -4,6 +4,13 @@
   background-color: $color-light-l;
 }
 
+.our-friends__list {
+  display: grid;
+  grid-template-columns: repeat(1, 270px);
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
 .our-friends__title {
   @extend %title;
   margin-bottom: 42px;
@@ -20,15 +27,23 @@
 }
 
 .our-friends__card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 270px;
-  margin: 0 auto 20px;
+  display: grid;
+  justify-items: center;
   border-radius: 9px;
   overflow: hidden;
   background-color: $color-light-s;
+
+  @media screen and (0px < width <=getBreakpoint('tablet')) {
+    &:nth-last-child(-n + 2) {
+      display: none;
+    }
+  }
+
+  @media screen and (getBreakpoint('tablet') <width<=getBreakpoint('desktop')) {
+    &:nth-last-child(-n + 1) {
+      display: none;
+    }
+  }
 }
 
 .our-friends__btn {
@@ -36,7 +51,7 @@
   margin-bottom: 30px;
 }
 
-.pagination-btn {
+.pagination-list__btn {
   @extend %btn;
   padding: 0;
   width: 52px;
@@ -46,11 +61,13 @@
   align-items: center;
 }
 
-.mobile-pagination-list {
-  display: flex;
-  justify-content: space-between;
-  width: 184px;
-  margin: 0 auto 42px;
+.pagination-list {
+  &--mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 184px;
+    margin: 0 auto 42px;
+  }
 }
 
 .our-friends__link {
@@ -70,5 +87,47 @@
   &:focus {
     background-color: $color-primary-light;
     border-color: $color-primary-light;
+  }
+}
+
+@media screen and (width>=getBreakpoint('tablet')) {
+  .our-friends {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  .our-friends__list {
+    gap: 40px;
+    grid-template-columns: repeat(2, 270px);
+    margin-bottom: 60px;
+  }
+
+  .our-friends__title {
+    margin-bottom: 60px;
+  }
+
+  .our-friends__list-card {
+    position: relative;
+  }
+
+  .pagination-list {
+    display: flex;
+    position: absolute;
+    top: 192px;
+  }
+
+  .pagination-list__item:last-child {
+    margin-left: 604px;
+  }
+}
+
+@media screen and (width >=getBreakpoint('desktop')) {
+  .our-friends__list {
+    gap: 90px;
+    grid-template-columns: repeat(3, 270px);
+  }
+
+  .pagination-list__item:last-child {
+    margin-left: 1096px;
   }
 }

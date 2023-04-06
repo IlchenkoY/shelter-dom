@@ -9,6 +9,8 @@
 .hero__title {
   @extend %title;
   margin-bottom: 42px;
+
+  animation: translateLeft 2000ms $timing-function;
 }
 
 .hero__description {
@@ -26,4 +28,40 @@
 
 .hero__img {
   margin-left: auto;
+}
+
+@media screen and (width>=getBreakpoint('tablet')) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.3;
+    text-align: start;
+    margin-left: 124px;
+  }
+
+  .hero__description {
+    text-align: start;
+    margin-left: 124px;
+    max-width: 460px;
+  }
+}
+
+@media screen and (width >=getBreakpoint('desktop')) {
+  .hero {
+    text-align: start;
+    padding-top: 180px;
+  }
+
+  .hero__desktop-wrapper {
+    display: flex;
+  }
+
+  .hero__description,
+  .hero__title {
+    margin-left: 0;
+  }
+
+  .hero__desktop-wrapper--left {
+    margin-top: 163px;
+    margin-right: 42px;
+  }
 }
