@@ -1,59 +1,39 @@
 @font-face {
-  font-family: 'Georgia';
-  src: url('fonts/georgia-regular/Georgia.eot');
-  src: url('fonts/georgia-regular/Georgia.eot?#iefix')
-      format('embedded-opentype'),
-    url('fonts/georgia-regular/Georgia.woff2') format('woff2'),
-    url('fonts/georgia-regular/Georgia.woff') format('woff'),
-    url('fonts/georgia-regular/Georgia.ttf') format('truetype');
+  font-family: "Georgia";
+  src: url("../../fonts/georgia-regular/Georgia.eot");
+  src: url("../../fonts/georgia-regular/Georgia.eot?#iefix") format("embedded-opentype"), url("../../fonts/georgia-regular/Georgia.woff2") format("woff2"), url("../../fonts/georgia-regular/Georgia.woff") format("woff"), url("../../fonts/georgia-regular/Georgia.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Georgia';
-  src: url('fonts/georgia-italic/Georgia-Italic.eot');
-  src: url('fonts/georgia-italic/Georgia-Italic.eot?#iefix')
-      format('embedded-opentype'),
-    url('fonts/georgia-italic/Georgia-Italic.woff2') format('woff2'),
-    url('fonts/georgia-italic/Georgia-Italic.woff') format('woff'),
-    url('fonts/georgia-italic/Georgia-Italic.ttf') format('truetype');
+  font-family: "Georgia";
+  src: url("../../fonts/georgia-italic/Georgia-Italic.eot");
+  src: url("../../fonts/georgia-italic/Georgia-Italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/georgia-italic/Georgia-Italic.woff2") format("woff2"), url("../../fonts/georgia-italic/Georgia-Italic.woff") format("woff"), url("../../fonts/georgia-italic/Georgia-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Georgia';
-  src: url('fonts/georgia-bold/Georgia-Bold.eot');
-  src: url('fonts/georgia-bold/Georgia-Bold.eot?#iefix')
-      format('embedded-opentype'),
-    url('fonts/georgia-bold/Georgia-Bold.woff2') format('woff2'),
-    url('fonts/georgia-bold/Georgia-Bold.woff') format('woff'),
-    url('fonts/georgia-bold/Georgia-Bold.ttf') format('truetype');
+  font-family: "Georgia";
+  src: url("../../fonts/georgia-bold/Georgia-Bold.eot");
+  src: url("../../fonts/georgia-bold/Georgia-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/georgia-bold/Georgia-Bold.woff2") format("woff2"), url("../../fonts/georgia-bold/Georgia-Bold.woff") format("woff"), url("../../fonts/georgia-bold/Georgia-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Arial';
-  src: url('fonts/arial -regular/ArialMT.eot');
-  src: url('fonts/arial -regular/ArialMT.eot?#iefix')
-      format('embedded-opentype'),
-    url('fonts/arial-regular/ArialMT.woff2') format('woff2'),
-    url('fonts/arial-regular/ArialMT.woff') format('woff'),
-    url('fonts/arial-regular/ArialMT.ttf') format('truetype');
+  font-family: "Arial";
+  src: url("../../fonts/arial -regular/ArialMT.eot");
+  src: url("../../fonts/arial -regular/ArialMT.eot?#iefix") format("embedded-opentype"), url("../../fonts/arial-regular/ArialMT.woff2") format("woff2"), url("../../fonts/arial-regular/ArialMT.woff") format("woff"), url("../../fonts/arial-regular/ArialMT.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Arial';
-  src: url('fonts/arial-italic/Arial-ItalicMT.eot');
-  src: url('fonts/arial-italic/Arial-ItalicMT.eot?#iefix')
-      format('embedded-opentype'),
-    url('fonts/arial-italic/Arial-ItalicMT.woff2') format('woff2'),
-    url('fonts/arial-italic/Arial-ItalicMT.woff') format('woff'),
-    url('fonts/arial-italic/Arial-ItalicMT.ttf') format('truetype');
+  font-family: "Arial";
+  src: url("../../fonts/arial-italic/Arial-ItalicMT.eot");
+  src: url("../../fonts/arial-italic/Arial-ItalicMT.eot?#iefix") format("embedded-opentype"), url("../../fonts/arial-italic/Arial-ItalicMT.woff2") format("woff2"), url("../../fonts/arial-italic/Arial-ItalicMT.woff") format("woff"), url("../../fonts/arial-italic/Arial-ItalicMT.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -79,7 +59,7 @@
   }
 }
 body {
-  font-family: 'Georgia', sans-serif;
+  font-family: "Georgia", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
@@ -145,7 +125,7 @@ p {
   color: #fafafa;
 }
 .navigation__list-link--current::after {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 3px;
@@ -158,7 +138,7 @@ p {
   color: #292929;
 }
 .our-pets-navigation__list-link--current::after {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 3px;
@@ -167,12 +147,7 @@ p {
   bottom: -7px;
 }
 
-.footer__title,
-.donation__title,
-.help__title,
-.our-friends__title,
-.about__title,
-.hero__title {
+.footer__title, .donation__title, .help__title, .our-friends__title, .about__title, .hero__title {
   font-size: 25px;
   line-height: 1.28;
   letter-spacing: 0.06em;
@@ -182,12 +157,7 @@ p {
   margin-right: auto;
 }
 @media screen and (width >= 768px) {
-  .footer__title,
-  .donation__title,
-  .help__title,
-  .our-friends__title,
-  .about__title,
-  .hero__title {
+  .footer__title, .donation__title, .help__title, .our-friends__title, .about__title, .hero__title {
     font-size: 35px;
   }
 }
@@ -196,10 +166,7 @@ p {
   color: #ffffff;
 }
 
-.donation__btn,
-.pagination-list__btn,
-.our-friends__btn,
-.hero__btn {
+.donation__btn, .pagination-list__btn, .our-friends__btn, .hero__btn {
   font-size: 17px;
   line-height: 1.294;
   letter-spacing: 0.06em;
@@ -210,26 +177,15 @@ p {
   border: 2px solid #f1cdb3;
   padding: 13px 43px;
   user-select: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.donation__btn:hover,
-.pagination-list__btn:hover,
-.our-friends__btn:hover,
-.hero__btn:hover,
-.donation__btn:focus,
-.pagination-list__btn:focus,
-.our-friends__btn:focus,
-.hero__btn:focus {
+.donation__btn:hover, .pagination-list__btn:hover, .our-friends__btn:hover, .hero__btn:hover, .donation__btn:focus, .pagination-list__btn:focus, .our-friends__btn:focus, .hero__btn:focus {
   background-color: #fddcc4;
   border-color: #fddcc4;
 }
 
-.donation__description--italic,
-.donation__description,
-.about__description,
-.hero__description {
-  font-family: 'Arial', sans-serif;
+.donation__description--italic, .donation__description, .about__description, .hero__description {
+  font-family: "Arial", sans-serif;
   font-size: 15px;
   line-height: 1.6;
   color: #4c4c4c;
@@ -263,7 +219,7 @@ p {
   color: #f1cdb3;
 }
 .header__logo-text--subtitle {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 13px;
   line-height: 1.153;
   letter-spacing: 0.1em;
@@ -301,14 +257,13 @@ p {
     margin-right: 35px;
   }
   .navigation__list-link {
-    font-family: 'Arial';
+    font-family: "Arial";
     font-size: 15px;
     line-height: 1.6;
     color: #cdcdcd;
     position: relative;
   }
-  .navigation__list-link:focus,
-  .navigation__list-link:hover {
+  .navigation__list-link:focus, .navigation__list-link:hover {
     color: #fafafa;
   }
 }
@@ -319,8 +274,7 @@ p {
 }
 .hero {
   background-color: #262425;
-  background-image: url(/img/background-img/noise_transparent@2x.png),
-    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+  background-image: url(../../img/background-img/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
   text-align: center;
   padding-top: 150px;
 }
@@ -470,12 +424,12 @@ p {
   background-color: #fafafa;
 }
 @media screen and (0px < width <= 768px) {
-  .our-friends__card:nth-last-child(-n + 2) {
+  .our-friends__card:nth-last-child(-n+2) {
     display: none;
   }
 }
 @media screen and (768px < width <= 1280px) {
-  .our-friends__card:nth-last-child(-n + 1) {
+  .our-friends__card:nth-last-child(-n+1) {
     display: none;
   }
 }
@@ -512,11 +466,9 @@ p {
   background-color: #f1cdb3;
   border-radius: 100px;
   border: 2px solid #f1cdb3;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.our-friends__link:hover,
-.our-friends__link:focus {
+.our-friends__link:hover, .our-friends__link:focus {
   background-color: #fddcc4;
   border-color: #fddcc4;
 }
@@ -659,7 +611,7 @@ p {
 }
 
 .donation__description {
-  font-family: 'Georgia', sans-serif;
+  font-family: "Georgia", sans-serif;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -745,8 +697,7 @@ p {
 .footer {
   padding-top: 30px;
   background-color: #262425;
-  background-image: url(/img/background-img/noise_transparent@2x.png),
-    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%);
+  background-image: url(../../img/background-img/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%);
 }
 
 .footer__title {
@@ -918,4 +869,4 @@ p {
     width: 340px;
     margin: 0 auto;
   }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
