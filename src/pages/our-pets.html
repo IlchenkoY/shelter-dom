@@ -8,8 +8,7 @@
   <title>Shelter-dom</title>
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-  <link rel="stylesheet" href="css/main.min.css" />
-  <link rel="icon" href="public/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/public/favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
@@ -39,7 +38,7 @@
         </ul>
         <button class="nav-btn" type="button">
           <svg class="nav-btn__img" width="30" height="22">
-            <use href="img/sprite.svg#icon-burger"></use>
+            <use href="/src/assets/img/sprite.svg#icon-burger"></use>
           </svg>
         </button>
       </nav>
@@ -56,14 +55,15 @@
         <div class="our-friends__list-card">
           <ul class="our-friends__list our-pets-our-friends__list">
             <li class="our-friends__card">
-              <img class="our-friends__img" src="img/slider-pets/pets-katrine.jpg" alt="pet" width="270" height="270" />
+              <img class="our-friends__img" src="/src/assets/img/slider-pets/pets-katrine.jpg" alt="pet" width="270"
+                height="270" />
               <p class="our-friends__description">Katrine</p>
               <button class="our-friends__btn" type="button">
                 Learn more
               </button>
             </li>
             <li class="our-friends__card">
-              <img class="our-friends__img" src="img/slider-pets/pets-jennifer.jpg" alt="pet" width="270"
+              <img class="our-friends__img" src="/src/assets/img/slider-pets/pets-jennifer.jpg" alt="pet" width="270"
                 height="270" />
               <p class="our-friends__description">Jennifer</p>
               <button class="our-friends__btn" type="button">
@@ -71,7 +71,8 @@
               </button>
             </li>
             <li class="our-friends__card">
-              <img class="our-friends__img" src="img/slider-pets/pets-woody.jpg" alt="pet" width="270" height="270" />
+              <img class="our-friends__img" src="/src/assets/img/slider-pets/pets-woody.jpg" alt="pet" width="270"
+                height="270" />
               <p class="our-friends__description">Woody</p>
               <button class="our-friends__btn" type="button">
                 Learn more
@@ -81,19 +82,25 @@
         </div>
         <div class="our-pets__pagination">
           <button class="pagination-list__btn" type="button">
-            <span>
-              << </span>
+            <svg width="27" height="23">
+              <use href="/src/assets/img/sprite.svg#icon-pagination-double-left"></use>
+            </svg>
           </button>
           <button class="pagination-list__btn" type="button">
-            <span>
-              < </span>
+            <svg width="11" height="20">
+              <use href="/src/assets/img/sprite.svg#icon-pagination-left"></use>
+            </svg>
           </button>
           <span class="pagination-page">1</span>
           <button class="pagination-list__btn" type="button">
-            <span>></span>
+            <svg width="11" height="20">
+              <use href="/src/assets/img/sprite.svg#icon-pagination-right"></use>
+            </svg>
           </button>
           <button class="pagination-list__btn" type="button">
-            <span>>></span>
+            <svg width="27" height="23">
+              <use href="/src/assets/img/sprite.svg#icon-pagination-double-right"></use>
+            </svg>
           </button>
         </div>
       </div>
@@ -111,14 +118,14 @@
               <ul class="footer__contacts-list">
                 <li class="footer__contacts-list-item">
                   <svg class="footer__list-img" width="40" height="32">
-                    <use href="img/sprite.svg#icon-mail"></use>
+                    <use href="/src/assets/img/sprite.svg#icon-mail"></use>
                   </svg>
                   <a class="footer__list-link footer__contacts-list-link" target="_blank"
                     href="mailto:email@shelter.com">email@shelter.com</a>
                 </li>
                 <li class="footer__contacts-list-item">
                   <svg class="footer__list-img" width="40" height="32">
-                    <use href="img/sprite.svg#icon-phone"></use>
+                    <use href="/src/assets/img/sprite.svg#icon-phone"></use>
                   </svg>
                   <a class="footer__list-link footer__contacts-list-link" target="_blank"
                     href="tel:+13 674 567 75 54">+13
@@ -135,14 +142,14 @@
               <ul class="footer__list">
                 <li class="footer__list-item">
                   <svg class="footer__list-img" width="22" height="32">
-                    <use href="img/sprite.svg#icon-marker"></use>
+                    <use href="/src/assets/img/sprite.svg#icon-marker"></use>
                   </svg>
                   <a class="footer__list-link" target="_blank" href="https://goo.gl/maps/wigC5qTgWsA6mV2C6">1 Central
                     Street, Boston (entrance from the store)</a>
                 </li>
                 <li class="footer__list-item">
                   <svg class="footer__list-img" width="22" height="32">
-                    <use href="img/sprite.svg#icon-marker"></use>
+                    <use href="/src/assets/img/sprite.svg#icon-marker"></use>
                   </svg>
                   <a class="footer__list-link" target="_blank" href="https://goo.gl/maps/262U3bf6q1DpkLA77">18 South
                     Park,
@@ -154,11 +161,12 @@
         </ul>
         <picture>
           <source
-            srcset="img/footer-puppy/tablet-desktop/footer-puppy.png 1x, img/footer-puppy/tablet-desktop/footer-puppy@2x.png 2x"
+            srcset="/src/assets/img/footer-puppy/tablet-desktop/footer-puppy.png 1x, /src/assets/img/footer-puppy/tablet-desktop/footer-puppy@2x.png 2x"
             media="(min-width: 768px)">
-          <source srcset="img/footer-puppy/mobile/footer-puppy.png 1x, img/footer-puppy/mobile/footer-puppy@2x.png 2x"
+          <source
+            srcset="/src/assets/img/footer-puppy/mobile/footer-puppy.png 1x, /src/assets/img/footer-puppy/mobile/footer-puppy@2x.png 2x"
             media="(min-width: 320px)">
-          <img class="footer__img" src="img/footer-puppy/mobile/footer-puppy.png" alt="puppy" />
+          <img class="footer__img" src="/src/assets/img/footer-puppy/mobile/footer-puppy.png" alt="puppy" />
         </picture>
       </div>
     </div>

@@ -15,17 +15,23 @@
 }
 
 .our-pets-navigation__list-link--current {
+    @extend .navigation__list-link--current;
+
     &.navigation__list-link {
         color: $color-dark-3xl;
     }
+}
+
+.menu-navigation__list-link--current {
+    @extend .navigation__list-link--current;
+
+    &.menu-navigation__list-link {
+        color: $color-light-s;
+        position: relative;
+    }
 
     &::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 3px;
-        background-color: $color-primary;
-        position: absolute;
-        bottom: -7px;
+        bottom: -10px;
+        left: 0;
     }
 }
