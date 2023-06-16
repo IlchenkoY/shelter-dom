@@ -16,6 +16,10 @@
   cursor: default;
 }
 
+.pagination__img {
+  @extend %centering;
+}
+
 @media screen and (width>=getBreakpoint('tablet')) {
   .our-pets__pagination {
     width: 340px;

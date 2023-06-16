@@ -1,6 +1,6 @@
 .hero {
   background-color: #262425;
-  background-image: url(/src/assets/img/background-img/noise_transparent@2x.png),
+  background-image: url(/public/img/background-img/noise_transparent@2x.png),
     radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
   text-align: center;
   padding-top: 150px;
@@ -10,7 +10,7 @@
   @extend %title;
   margin-bottom: 42px;
 
-  animation: translateLeft 2000ms $timing-function;
+  animation: translateLeft 1000ms $timing-function;
 }
 
 .hero__description {
@@ -20,8 +20,9 @@
   margin-bottom: 42px;
 }
 
-.hero__btn {
+.hero__link {
   @extend %btn;
+  display: inline-block;
   background-color: $color-primary;
   margin-bottom: 105px;
 }

@@ -3,12 +3,15 @@
 }
 
 .our-pets-our-friends__list {
-  margin-bottom: 42px;
+  display: grid;
+  grid-template-columns: repeat(1, 270px);
+
 }
 
 @media screen and (width>=getBreakpoint('tablet')) {
   .our-pets-our-friends__list {
-    margin-bottom: 40px;
+    grid-template-columns: repeat(2, 270px);
+    margin-bottom: 0px;
   }
 
   .our-pets-our-friends {
@@ -24,5 +27,9 @@
 @media screen and (width>=getBreakpoint('desktop')) {
   .our-pets-our-friends {
     padding-bottom: 100px;
+  }
+
+  .our-pets-our-friends__list {
+    grid-template-columns: repeat(3, 270px);
   }
 }

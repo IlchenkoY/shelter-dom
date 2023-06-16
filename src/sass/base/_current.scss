@@ -26,8 +26,8 @@
     @extend .navigation__list-link--current;
 
     &.menu-navigation__list-link {
-        color: $color-light-s;
         position: relative;
+        color: $color-light-s;
     }
 
     &::after {

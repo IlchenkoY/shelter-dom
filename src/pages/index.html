@@ -56,7 +56,7 @@
                 </ul>
                 <button class="nav-btn" type="button">
                     <svg class="nav-btn__img nav-btn__img--primary" width="30" height="22">
-                        <use href="/src/assets/img/sprite.svg#icon-burger"></use>
+                        <use href="/public/img/sprite.svg#icon-burger"></use>
                     </svg>
                 </button>
             </nav>
@@ -77,19 +77,19 @@
                             extremely wide and open heart. He or she will love you more than
                             anybody else in the world, you will see!
                         </p>
-                        <button class="hero__btn" type="button">Make a friend</button>
+                        <a href="our-pets.html" class="hero__link">Make a friend</a>
                     </div>
                     <picture>
                         <source
-                            srcset="/src/assets/img/start-screen-puppy/desktop/start-screen-puppy.png 1x, /src/assets/img/start-screen-puppy/desktop/start-screen-puppy@2x.png 2x"
+                            srcset="/public/img/start-screen-puppy/desktop/start-screen-puppy.png 1x, /public/img/start-screen-puppy/desktop/start-screen-puppy@2x.png 2x"
                             media="(min-width: 1280px)">
                         <source
-                            srcset="/src/assets/img/start-screen-puppy/tablet/start-screen-puppy.png 1x, /src/assets/img/start-screen-puppy/tablet/start-screen-puppy@2x.png 2x"
+                            srcset="/public/img/start-screen-puppy/tablet/start-screen-puppy.png 1x, /public/img/start-screen-puppy/tablet/start-screen-puppy@2x.png 2x"
                             media="(min-width: 768px)">
                         <source
-                            srcset="/src/assets/img/start-screen-puppy/mobile/start-screen-puppy.png 1x, /src/assets/img/start-screen-puppy/mobile/start-screen-puppy@2x.png 2x"
+                            srcset="/public/img/start-screen-puppy/mobile/start-screen-puppy.png 1x, /public/img/start-screen-puppy/mobile/start-screen-puppy@2x.png 2x"
                             media="(min-width: 320px)">
-                        <img class="hero__img" src="/src/assets/img/start-screen-puppy/mobile/start-screen-puppy.png"
+                        <img class="hero__img" src="/public/img/start-screen-puppy/mobile/start-screen-puppy.png"
                             alt="puppy" />
                     </picture>
                 </div>
@@ -121,19 +121,27 @@
                     </div>
                     <picture>
                         <source
-                            srcset="/src/assets/img/about-pets/tablet-desktop/about-pets.png 1x, /src/assets/img/about-pets/tablet-desktop/about-pets@2x.png 2x"
+                            srcset="/public/img/about-pets/tablet-desktop/about-pets.png 1x, /public/img/about-pets/tablet-desktop/about-pets@2x.png 2x"
                             media="(min-width: 768px)">
                         <source
-                            srcset="/src/assets/img/about-pets/mobile/about-pets.png 1x, /src/assets/img/about-pets/mobile/about-pets@2x.png 2x"
+                            srcset="/public/img/about-pets/mobile/about-pets.png 1x, /public/img/about-pets/mobile/about-pets@2x.png 2x"
                             media="(min-width: 320px)">
-                        <img class="about__img" src="/src/assets/img/about-pets/mobile/about-pets.png"
-                            alt="dog and cat" />
+                        <img class="about__img" src="/public/img/about-pets/mobile/about-pets.png" alt="dog and cat" />
                     </picture>
                 </div>
             </div>
         </section>
         <!--OUR FRIENDS-->
         <section class="our-friends" id="pets">
+            <div class="backdrop is-hidden">
+                <div class="modal">
+                    <button class="modal__btn--close" type="button">
+                        <svg class="modal__img" width="12" height="12">
+                            <use href="/public/img/sprite.svg#icon-cross"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
             <div class="container">
                 <h2 class="our-friends__title">
                     Our friends who<br />
@@ -141,43 +149,21 @@
                 </h2>
                 <div class="our-friends__list-card">
                     <ul class="our-friends__list">
-                        <li class="our-friends__card">
-                            <img class="our-friends__img" src="/src/assets/img/slider-pets/pets-katrine.jpg" alt="pet"
-                                width="270" height="270" />
-                            <p class="our-friends__description">Katrine</p>
-                            <button class="our-friends__btn" type="button">
-                                Learn more
-                            </button>
-                        </li>
-                        <li class="our-friends__card">
-                            <img class="our-friends__img" src="/src/assets/img/slider-pets/pets-jennifer.jpg" alt="pet"
-                                width="270" height="270" />
-                            <p class="our-friends__description">Jennifer</p>
-                            <button class="our-friends__btn" type="button">
-                                Learn more
-                            </button>
-                        </li>
-                        <li class="our-friends__card">
-                            <img class="our-friends__img" src="/src/assets/img/slider-pets/pets-woody.jpg" alt="pet"
-                                width="270" height="270" />
-                            <p class="our-friends__description">Woody</p>
-                            <button class="our-friends__btn" type="button">
-                                Learn more
-                            </button>
-                        </li>
                     </ul>
                     <ul class="pagination-list pagination-list--mobile">
-                        <li class="pagination-list__item">
-                            <button class="pagination-list__btn" type="button">
-                                <svg class="pagination-list__img" width="14" height="6">
-                                    <use href="/src/assets/img/sprite.svg#icon-arrow-left"></use>
+                        <li id="left" class="pagination-list__item">
+                            <button
+                                class="pagination-list__btn pagination-list__btn--left pagination-list__btn--disablet"
+                                type="button">
+                                <svg class="pagination-list__img pagination-list__img--disablet" width="14" height="6">
+                                    <use href="/public/img/sprite.svg#icon-arrow-left"></use>
                                 </svg>
                             </button>
                         </li>
-                        <li class="pagination-list__item">
-                            <button class="pagination-list__btn" type="button">
+                        <li id="right" class="pagination-list__item">
+                            <button class="pagination-list__btn pagination-list__btn--right" type="button">
                                 <svg class="pagination-list__img" width="14" height="6">
-                                    <use href="/src/assets/img/sprite.svg#icon-arrow-right"></use>
+                                    <use href="/public/img/sprite.svg#icon-arrow-right"></use>
                                 </svg>
                             </button>
                         </li>
@@ -194,55 +180,54 @@
                 <ul class="help__list">
                     <li class="help__list-item">
                         <svg class="help__list-img">
-                            <use href="/src/assets/img/sprite.svg#icon-pet-food"></use>
+                            <use href="/public/img/sprite.svg#icon-pet-food"></use>
                         </svg>
                         <p class="help__list-item-description">Pet food</p>
                     </li>
                     <li class="help__list-item">
                         <svg class="help__list-img">
-                            <use href="/src/assets/img/sprite.svg#icon-transportation"></use>
+                            <use href="/public/img/sprite.svg#icon-transportation"></use>
                         </svg>
                         <p class="help__list-item-description">Transportation</p>
                     </li>
                     <li class="help__list-item">
                         <svg class="help__list-img">
-                            <use href="/src/assets/img/sprite.svg#icon-toys"></use>
+                            <use href="/public/img/sprite.svg#icon-toys"></use>
                         </svg>
                         <p class="help__list-item-description">Toys</p>
                     </li>
                     <li class="help__list-item">
                         <svg class="help__list-img">
-                            <use href="/src/assets/img/sprite.svg#icon-bowls-and-cups"></use>
+                            <use href="/public/img/sprite.svg#icon-bowls-and-cups"></use>
                         </svg>
                         <p class="help__list-item-description">Bowls and cups</p>
                     </li>
                     <li class="help__list-item">
                         <svg class="help__list-img">
-                            <use href="/src/assets/img/sprite.svg#icon-shampoos"></use>
+                            <use href="/public/img/sprite.svg#icon-shampoos"></use>
                         </svg>
                         <p class="help__list-item-description">Shampoos</p>
                     </li>
                     <li class="help__list-item">
                         <svg class="help__list-img">
-                            <use href="/src/assets/img/sprite.svg#icon-vitamins"></use>
+                            <use href="/public/img/sprite.svg#icon-vitamins"></use>
                         </svg>
                         <p class="help__list-item-description">Vitamins</p>
                     </li>
                     <li class="help__list-item">
                         <svg class="help__list-img">
-                            <use href="/src/assets/img/sprite.svg#icon-medicines"></use>
+                            <use href="/public/img/sprite.svg#icon-medicines"></use>
                         </svg>
                         <p class="help__list-item-description">Medicines</p>
                     </li>
                     <li class="help__list-item">
                         <svg class="help__list-img">
-                            <use href="/src/assets/img/sprite.svg#icon-collars-leashes"></use>
-                        </svg>
-                        <p class="help__list-item-description">Collars / leashes</p>
+                            <use href="/public/img/sprite.svg#icon-collars-leashes"></use>
+                            <p class=" help__list-item-description">Collars / leashes</p>
                     </li>
                     <li class="help__list-item">
                         <svg class="help__list-img">
-                            <use href="/src/assets/img/sprite.svg#icon-sleeping-area"></use>
+                            <use href="/public/img/sprite.svg#icon-sleeping-area"></use>
                         </svg>
                         <p class="help__list-item-description">Sleeping areas</p>
                     </li>
@@ -260,7 +245,7 @@
                         </p>
                         <button class="donation__btn">
                             <svg class="donation__card-img" width="30" height="23">
-                                <use href="/src/assets/img/sprite.svg#icon-credit-card"></use>
+                                <use href="/public/img/sprite.svg#icon-credit-card"></use>
                             </svg>
                             <p class="donation__card-number">8380 2880 8028 8791 7435</p>
                         </button>
@@ -273,13 +258,12 @@
                     </div>
                     <picture>
                         <source
-                            srcset="/src/assets/img/donation-dog/tablet-desktop/donation-dog.png 1x, /src/assets/img/donation-dog/tablet-desktop/donation-dog@2x.png 2x"
+                            srcset="/public/img/donation-dog/tablet-desktop/donation-dog.png 1x, /public/img/donation-dog/tablet-desktop/donation-dog@2x.png 2x"
                             media="(min-width: 768px)">
                         <source
-                            srcset="/src/assets/img/donation-dog/mobile/donation-dog.png 1x, /src/assets/img/donation-dog/mobile/donation-dog@2x.png 2x"
+                            srcset="/public/img/donation-dog/mobile/donation-dog.png 1x, /public/img/donation-dog/mobile/donation-dog@2x.png 2x"
                             media="(min-width: 320px)">
-                        <img class="donation__img" src="/src/assets/img/donation-dog/mobile/donation-dog.png"
-                            alt="puppy" />
+                        <img class="donation__img" src="/public/img/donation-dog/mobile/donation-dog.png" alt="puppy" />
                     </picture>
                 </div>
             </div>
@@ -297,14 +281,14 @@
                             <ul class="footer__contacts-list">
                                 <li class="footer__contacts-list-item">
                                     <svg class="footer__list-img" width="40" height="32">
-                                        <use href="/src/assets/img/sprite.svg#icon-mail"></use>
+                                        <use href="/public/img/sprite.svg#icon-mail"></use>
                                     </svg>
                                     <a class="footer__list-link footer__contacts-list-link" target="_blank"
                                         href="mailto:email@shelter.com">email@shelter.com</a>
                                 </li>
                                 <li class="footer__contacts-list-item">
                                     <svg class="footer__list-img" width="40" height="32">
-                                        <use href="/src/assets/img/sprite.svg#icon-phone"></use>
+                                        <use href="/public/img/sprite.svg#icon-phone"></use>
                                     </svg>
                                     <a class="footer__list-link footer__contacts-list-link" target="_blank"
                                         href="tel:+13 674 567 75 54">+13
@@ -321,7 +305,7 @@
                             <ul class="footer__list">
                                 <li class="footer__list-item">
                                     <svg class="footer__list-img" width="22" height="32">
-                                        <use href="/src/assets/img/sprite.svg#icon-marker"></use>
+                                        <use href="/public/img/sprite.svg#icon-marker"></use>
                                     </svg>
                                     <a class="footer__list-link" target="_blank"
                                         href="https://goo.gl/maps/wigC5qTgWsA6mV2C6">1 Central
@@ -329,7 +313,7 @@
                                 </li>
                                 <li class="footer__list-item">
                                     <svg class="footer__list-img" width="22" height="32">
-                                        <use href="/src/assets/img/sprite.svg#icon-marker"></use>
+                                        <use href="/public/img/sprite.svg#icon-marker"></use>
                                     </svg>
                                     <a class="footer__list-link" target="_blank"
                                         href="https://goo.gl/maps/262U3bf6q1DpkLA77">18 South
@@ -342,12 +326,12 @@
                 </ul>
                 <picture>
                     <source
-                        srcset="/src/assets/img/footer-puppy/tablet-desktop/footer-puppy.png 1x, /src/assets/img/footer-puppy/tablet-desktop/footer-puppy@2x.png 2x"
+                        srcset="/public/img/footer-puppy/tablet-desktop/footer-puppy.png 1x, /public/img/footer-puppy/tablet-desktop/footer-puppy@2x.png 2x"
                         media="(min-width: 768px)">
                     <source
-                        srcset="/src/assets/img/footer-puppy/mobile/footer-puppy.png 1x, /src/assets/img/footer-puppy/mobile/footer-puppy@2x.png 2x"
+                        srcset="/public/img/footer-puppy/mobile/footer-puppy.png 1x, /public/img/footer-puppy/mobile/footer-puppy@2x.png 2x"
                         media="(min-width: 320px)">
-                    <img class="footer__img" src="/src/assets/img/footer-puppy/mobile/footer-puppy.png" alt="puppy" />
+                    <img class="footer__img" src="/public/img/footer-puppy/mobile/footer-puppy.png" alt="puppy" />
                 </picture>
             </div>
         </div>

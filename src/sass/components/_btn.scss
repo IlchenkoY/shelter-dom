@@ -1,4 +1,5 @@
 %btn {
+  position: relative;
   @include font(17px, 1.294, 0.06em);
   color: $color-dark-3xl;
   background-color: transparent;

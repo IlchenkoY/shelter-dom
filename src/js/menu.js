@@ -1,8 +1,10 @@
 const menuBtn = document.querySelector(".nav-btn");
 const menu = document.querySelector(".menu");
 const menuNavList = document.querySelector(".menu-navigation__list");
-
-console.log(document.querySelectorAll(".menu-navigation__list-link")[1]);
+const ourPetsLogoText = document.querySelector(".our-pets-header__logo-text");
+const ourPetsLogoTextSubtitle = document.querySelector(
+  ".our-pets-header__logo-text--subtitle"
+);
 
 menuBtn.addEventListener("click", btnClickHandler);
 menuNavList.addEventListener("click", listItemClickHandler);
@@ -15,6 +17,13 @@ function menuHandler() {
 
 function btnClickHandler() {
   menuHandler();
+  if (window.location.pathname.endsWith("/our-pets.html")) {
+    menuBtn.classList.toggle("nav-btn__img--primary");
+    ourPetsLogoText.classList.toggle("our-pets-header__logo-text");
+    ourPetsLogoTextSubtitle.classList.toggle(
+      "our-pets-header__logo-text--subtitle"
+    );
+  }
 }
 
 function listItemClickHandler() {

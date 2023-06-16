@@ -5,15 +5,30 @@
 }
 
 .our-friends__list {
-  display: grid;
-  grid-template-columns: repeat(1, 270px);
-  justify-content: center;
+  white-space: nowrap;
+  overflow: hidden;
   margin-bottom: 20px;
+  scroll-behavior: smooth;
+}
+
+.our-friends__list--dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+
+  &our-friends__img {
+    pointer-events: none;
+  }
+}
+
+.our-friends__list-card {
+  max-width: 270px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .our-friends__title {
   @extend %title;
-  margin-bottom: 42px;
+  margin-bottom: 12px;
 }
 
 .our-friends__description {
@@ -27,22 +42,17 @@
 }
 
 .our-friends__card {
-  display: grid;
-  justify-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-width: 270px;
   border-radius: 9px;
   overflow: hidden;
   background-color: $color-light-s;
 
-  @media screen and (0px < width <=getBreakpoint('tablet')) {
-    &:nth-last-child(-n + 2) {
-      display: none;
-    }
-  }
-
-  @media screen and (getBreakpoint('tablet') <width<=getBreakpoint('desktop')) {
-    &:nth-last-child(-n + 1) {
-      display: none;
-    }
+  @media screen and (width<getBreakpoint('tablet')) {
+    margin-top: 30px;
   }
 }
 
@@ -56,10 +66,16 @@
   padding: 0;
   width: 52px;
   height: 52px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
+
+.pagination-list__btn--disablet {
+  visibility: hidden;
+}
+
+.pagination-list__img {
+  @extend %centering;
+}
+
 
 .pagination-list {
   &--mobile {
@@ -97,8 +113,8 @@
   }
 
   .our-friends__list {
+    display: flex;
     gap: 40px;
-    grid-template-columns: repeat(2, 270px);
     margin-bottom: 60px;
   }
 
@@ -107,6 +123,7 @@
   }
 
   .our-friends__list-card {
+    max-width: 580px;
     position: relative;
   }
 
@@ -114,6 +131,7 @@
     display: flex;
     position: absolute;
     top: 192px;
+    left: -64px;
   }
 
   .pagination-list__item:last-child {
@@ -122,9 +140,17 @@
 }
 
 @media screen and (width >=getBreakpoint('desktop')) {
+  .our-friends__list-card {
+    max-width: 990px;
+    position: relative;
+  }
+
   .our-friends__list {
     gap: 90px;
-    grid-template-columns: repeat(3, 270px);
+  }
+
+  .pagination-list {
+    left: -105px;
   }
 
   .pagination-list__item:last-child {

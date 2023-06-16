@@ -1,0 +1,98 @@
+export const animals = [
+  {
+    name: "Jennifer",
+    type: "dog",
+    breed: "Labrador",
+    description:
+      "Jennifer is a sweet 2-month-old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
+    age: "2 months",
+    imgsrc: "/img/slider-pets/pets-jennifer.jpg",
+    inoculation: "none",
+    diseases: "none",
+    parasites: "none",
+  },
+  {
+    name: "Max",
+    type: "dog",
+    breed: "Golden Retriever",
+    description:
+      "Max is a friendly 1-year-old Golden Retriever who loves playing fetch and going for long walks. He is well-trained and gets along well with other dogs and children.",
+    age: "1 year",
+    imgsrc: "/img/slider-pets/pets-woody.jpg",
+    inoculation: "up to date",
+    diseases: "none",
+    parasites: "flea",
+  },
+  {
+    name: "Bella",
+    type: "cat",
+    breed: "Siamese",
+    description:
+      "Bella is an elegant 3-year-old Siamese cat with striking blue eyes. She is a social and affectionate feline who enjoys curling up in laps and being the center of attention.",
+    age: "3 years",
+    imgsrc: "/img/slider-pets/pets-katrine (2).jpg",
+    inoculation: "up to date",
+    diseases: "none",
+    parasites: "none",
+  },
+  {
+    name: "Rocky",
+    type: "dog",
+    breed: "Bulldog",
+    description:
+      "Rocky is a strong and playful 2-year-old Bulldog with a heart of gold. Despite his muscular appearance, he is a gentle and loving companion who adores belly rubs.",
+    age: "2 years",
+    imgsrc: "/img/slider-pets/pets-katrine (1).jpg",
+    inoculation: "up to date",
+    diseases: "none",
+    parasites: "tick",
+  },
+  {
+    name: "Luna",
+    type: "cat",
+    breed: "Maine Coon",
+    description:
+      "Luna is a majestic 4-year-old Maine Coon with a stunning long coat. She is an independent and intelligent cat who enjoys exploring her surroundings and observing from high places.",
+    age: "4 years",
+    imgsrc: "/img/slider-pets/pets-katrine.jpg",
+    inoculation: "up to date",
+    diseases: "none",
+    parasites: "flea",
+  },
+  {
+    name: "Charlie",
+    type: "dog",
+    breed: "Jack russell",
+    description:
+      "Charlie is a smart and energetic 3-year-old Poodle. He loves learning new tricks and enjoys going on long runs with his owner. Charlie is also great with children.",
+    age: "3 years",
+    imgsrc: "/img/slider-pets/pets-scarlet.jpg",
+    inoculation: "up to date",
+    diseases: "none",
+    parasites: "none",
+  },
+  {
+    name: "Milo",
+    type: "dog",
+    breed: "Corgi",
+    description:
+      "Milo is an adorable 1-year-old Corgi with a playful and friendly personality. He enjoys chasing balls and going for walks in the park. Milo is great with other dogs too!",
+    age: "1 year",
+    imgsrc: "/img/slider-pets/pets-charly.jpg",
+    inoculation: "up to date",
+    diseases: "none",
+    parasites: "none",
+  },
+  {
+    name: "Lucy",
+    type: "cat",
+    breed: "Scottish Fold",
+    description:
+      "Lucy is a charming 2-year-old Scottish Fold cat with unique folded ears. She has a gentle and calm nature and loves spending lazy afternoons napping in cozy spots.",
+    age: "2 years",
+    imgsrc: "/img/slider-pets/pets-timmy.jpg",
+    inoculation: "up to date",
+    diseases: "none",
+    parasites: "none",
+  },
+];
