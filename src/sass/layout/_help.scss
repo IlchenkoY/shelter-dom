@@ -37,7 +37,7 @@
 }
 
 .help__list-item-description {
-  @include font(15px, 1.133, 0.06em);
+  @include font(15px, 1.133);
   color: $color-dark-l;
 }
 

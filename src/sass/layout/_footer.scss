@@ -34,7 +34,7 @@
 
 .footer__list-link {
   position: relative;
-  @include font(20px, 1.15, 0.06em);
+  @include font(20px, 1.15);
   color: $color-primary;
   padding-left: 42px;
   padding-bottom: 9px;

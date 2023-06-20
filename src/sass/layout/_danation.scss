@@ -25,7 +25,7 @@
 }
 
 .donation__card-number {
-  @include font(15px, 1.133, 0.06em);
+  @include font(15px, 1.133);
   color: $color-dark-l;
   margin-left: 15px;
 }

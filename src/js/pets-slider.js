@@ -1,25 +1,29 @@
 import debounce from "lodash.debounce";
-import { petsList } from "./pets-cards-list";
+const petsList = document.querySelector(".our-friends__list");
 const firstImg = petsList.querySelectorAll("img")[0];
 const arrows = document.querySelectorAll(".pagination-list__item");
 
-petsList.addEventListener("mousedown", dragStart);
-petsList.addEventListener("touchstart", dragStart);
+if (!window.location.pathname.endsWith("our-pets.html")) {
+  petsList.addEventListener("mousedown", dragStart);
+  petsList.addEventListener("touchstart", dragStart);
 
-petsList.addEventListener("mousemove", dragging);
-petsList.addEventListener("touchmove", dragging);
+  petsList.addEventListener("mousemove", dragging);
+  petsList.addEventListener("touchmove", dragging);
 
-petsList.addEventListener("mouseup", dragStop);
-petsList.addEventListener("mouseleave", dragStop);
-petsList.addEventListener("touchend", dragStop);
-window.addEventListener(
-  "resize",
-  debounce(() => location.reload(), 100)
-);
+  petsList.addEventListener("mouseup", dragStop);
+  petsList.addEventListener("mouseleave", dragStop);
+  petsList.addEventListener("touchend", dragStop);
+  window.addEventListener(
+    "resize",
+    debounce(() => location.reload(), 100)
+  );
+}
 
 let isDragStart = false,
   prevPageX,
-  prevScrollLeft;
+  isDragging = false,
+  prevScrollLeft,
+  positionDiff;
 
 arrows.forEach((icon) => {
   icon.addEventListener(
@@ -42,6 +46,26 @@ arrows.forEach((icon) => {
   );
 });
 
+function autoSlide() {
+  if (petsList.scrollLeft === petsList.scrollWidth - petsList.clientWidth)
+    return;
+  positionDiff = Math.abs(positionDiff);
+  let firstImgWidth =
+    window.getComputedStyle(petsList).gap === "normal"
+      ? firstImg.clientWidth + 4
+      : firstImg.clientWidth +
+        Number(window.getComputedStyle(petsList).gap.slice(0, -2));
+  let valDifference = firstImgWidth - positionDiff;
+
+  if (petsList.scrollLeft > prevScrollLeft) {
+    return (petsList.scrollLeft +=
+      positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff);
+  }
+
+  petsList.scrollLeft -=
+    positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+}
+
 function showButton() {
   let scrollWidth = petsList.scrollWidth - petsList.clientWidth;
 
@@ -60,13 +84,17 @@ function dragStart(e) {
 function dragStop() {
   isDragStart = false;
   petsList.classList.remove("our-friends__list--dragging");
+  if (!isDragging) return;
+  isDragging = false;
+  autoSlide();
 }
 
 function dragging(e) {
   if (!isDragStart) return;
   e.preventDefault();
+  isDragging = true;
   petsList.classList.add("our-friends__list--dragging");
-  let positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+  positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
   petsList.scrollLeft = prevScrollLeft - positionDiff;
   showButton();
 }

@@ -17,11 +17,54 @@
 }
 
 .modal {
-    @extend %centering;
     min-height: 341px;
-    min-width: 240px;
+    width: 240px;
+    padding: 10px;
     border-radius: 10px;
     background-color: $color-light-xl;
+}
+
+.modal__title,
+.modal__kind {
+    text-align: center;
+}
+
+.modal__title {
+    @include font(35px, 1.3);
+    margin-bottom: 10px;
+}
+
+.modal__kind {
+    @include font(20px, 1.15);
+    margin-bottom: 20px;
+}
+
+.modal__description {
+    @include font(13px, 1.1);
+    margin-bottom: 24px;
+}
+
+.modal__list-item {
+    @include font(15px, 1.1);
+    margin-bottom: 5px;
+
+    &::before {
+        content: '\2022';
+        color: $color-primary;
+        font-weight: bold;
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+
+.modal__list-item-element {
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.modal__container {
+    display: inline-block;
+    @extend %centering;
 }
 
 .modal__btn--close {
@@ -35,19 +78,54 @@
 }
 
 .modal__img {
+    display: none
+}
+
+.modal__svg {
     @extend %centering;
 }
 
 @media screen and (width>=getBreakpoint('tablet')) {
     .modal {
+        display: flex;
         min-height: 350px;
         min-width: 630px;
+    }
+
+    .modal__img {
+        display: block;
+        border-radius: 10px;
+        width: 350px;
+        height: 350px;
+    }
+
+    .moda__info-card {
+        margin-left: 10px;
     }
 }
 
 @media screen and (width>=getBreakpoint('desktop')) {
     .modal {
+        padding: 20px;
         min-height: 500px;
         min-width: 900px;
+    }
+
+    .moda__info-card {
+        padding-top: 30px;
+    }
+
+    .modal__img {
+        width: 500px;
+        height: 500px;
+    }
+
+    .modal__description {
+        @include font(15px, 1.1);
+        margin-bottom: 40px;
+    }
+
+    .modal__list-item {
+        margin-bottom: 10px;
     }
 }

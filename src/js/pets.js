@@ -1,7 +1,7 @@
 export const animals = [
   {
     name: "Jennifer",
-    type: "dog",
+    kind: "dog",
     breed: "Labrador",
     description:
       "Jennifer is a sweet 2-month-old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
@@ -10,10 +10,11 @@ export const animals = [
     inoculation: "none",
     diseases: "none",
     parasites: "none",
+    id: 1,
   },
   {
     name: "Max",
-    type: "dog",
+    kind: "dog",
     breed: "Golden Retriever",
     description:
       "Max is a friendly 1-year-old Golden Retriever who loves playing fetch and going for long walks. He is well-trained and gets along well with other dogs and children.",
@@ -21,11 +22,12 @@ export const animals = [
     imgsrc: "/img/slider-pets/pets-woody.jpg",
     inoculation: "up to date",
     diseases: "none",
-    parasites: "flea",
+    parasites: "none",
+    id: 2,
   },
   {
     name: "Bella",
-    type: "cat",
+    kind: "cat",
     breed: "Siamese",
     description:
       "Bella is an elegant 3-year-old Siamese cat with striking blue eyes. She is a social and affectionate feline who enjoys curling up in laps and being the center of attention.",
@@ -34,10 +36,11 @@ export const animals = [
     inoculation: "up to date",
     diseases: "none",
     parasites: "none",
+    id: 3,
   },
   {
     name: "Rocky",
-    type: "dog",
+    kind: "dog",
     breed: "Bulldog",
     description:
       "Rocky is a strong and playful 2-year-old Bulldog with a heart of gold. Despite his muscular appearance, he is a gentle and loving companion who adores belly rubs.",
@@ -45,11 +48,12 @@ export const animals = [
     imgsrc: "/img/slider-pets/pets-katrine (1).jpg",
     inoculation: "up to date",
     diseases: "none",
-    parasites: "tick",
+    parasites: "none",
+    id: 4,
   },
   {
     name: "Luna",
-    type: "cat",
+    kind: "cat",
     breed: "Maine Coon",
     description:
       "Luna is a majestic 4-year-old Maine Coon with a stunning long coat. She is an independent and intelligent cat who enjoys exploring her surroundings and observing from high places.",
@@ -57,11 +61,12 @@ export const animals = [
     imgsrc: "/img/slider-pets/pets-katrine.jpg",
     inoculation: "up to date",
     diseases: "none",
-    parasites: "flea",
+    parasites: "none",
+    id: 5,
   },
   {
     name: "Charlie",
-    type: "dog",
+    kind: "dog",
     breed: "Jack russell",
     description:
       "Charlie is a smart and energetic 3-year-old Poodle. He loves learning new tricks and enjoys going on long runs with his owner. Charlie is also great with children.",
@@ -70,10 +75,11 @@ export const animals = [
     inoculation: "up to date",
     diseases: "none",
     parasites: "none",
+    id: 6,
   },
   {
     name: "Milo",
-    type: "dog",
+    kind: "dog",
     breed: "Corgi",
     description:
       "Milo is an adorable 1-year-old Corgi with a playful and friendly personality. He enjoys chasing balls and going for walks in the park. Milo is great with other dogs too!",
@@ -82,10 +88,11 @@ export const animals = [
     inoculation: "up to date",
     diseases: "none",
     parasites: "none",
+    id: 7,
   },
   {
     name: "Lucy",
-    type: "cat",
+    kind: "cat",
     breed: "Scottish Fold",
     description:
       "Lucy is a charming 2-year-old Scottish Fold cat with unique folded ears. She has a gentle and calm nature and loves spending lazy afternoons napping in cozy spots.",
@@ -94,5 +101,6 @@ export const animals = [
     inoculation: "up to date",
     diseases: "none",
     parasites: "none",
+    id: 8,
   },
 ];

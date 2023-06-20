@@ -7,9 +7,9 @@
   "scripts": {
     "start": "set NODE_ENV=development&&webpack server",
     "dev": "set NODE_ENV=development&&webpack",
-    "prod": "set NODE_ENV=production&&webpack",
+    "build": "set NODE_ENV=production&&webpack",
     "deploy": "gh-pages -d dist",
-    "predeploy": "npm run prod",
+    "predeploy": "npm run build",
     "clear": "rd /s /q dist"
   },
   "keywords": [],
