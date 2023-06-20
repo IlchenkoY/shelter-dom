@@ -13,10 +13,6 @@ if (!window.location.pathname.endsWith("our-pets.html")) {
   petsList.addEventListener("mouseup", dragStop);
   petsList.addEventListener("mouseleave", dragStop);
   petsList.addEventListener("touchend", dragStop);
-  window.addEventListener(
-    "resize",
-    debounce(() => location.reload(), 100)
-  );
 }
 
 let isDragStart = false,
